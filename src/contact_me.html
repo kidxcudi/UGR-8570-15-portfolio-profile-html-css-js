@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">
+              <svg class="icon">
+                <use
+                  xlink:href="images/svg_sprite.svg#triangle-svgrepo-com"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about_me.html">About me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact_me.html">Contact me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Get in touch</h1>
+      <article class="contact_form">
+        <h3>Drop me a line</h3>
+        <form action="mail.php" method="post">
+          <label for="name" class="label">Your name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Please enter your name"
+            required
+          />
+          <div class="inputbox">
+            <label for="email" class="label">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="example@example.com"
+              required
+            />
+          </div>
+          <div class="inputbox">
+            <label for="subject" class="label">Subject</label>
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="Please tell me why you are here"
+              required
+            />
+          </div>
+          <div class="inputbox">
+            <label for="message" class="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Drop your message here"
+              rows="10"
+            ></textarea>
+          </div>
+
+          <input type="submit" value="submit" class="subbtn" />
+        </form>
+      </article>
+      <article>
+        <h3>Or get in touch at</h3>
+        <div class="contact_card">
+          <a href="https://maps.app.goo.gl/JiGmGNVNkvY2JKbEA">
+            <svg class="icon">
+              <use xlink:href="images/svg_sprite.svg#address-svgrepo-com"></use>
+            </svg>
+            <p>Bole,Addis Ababa,Ethiopia</p>
+          </a>
+        </div>
+        <div class="contact_card">
+          <a href="mailto:kidxcudi2@gmail.com">
+            <svg class="icon">
+              <use xlink:href="images/svg_sprite.svg#icons8-email"></use>
+            </svg>
+            <p>kidxcudi2@gmail.com</p>
+          </a>
+        </div>
+        <div class="contact_card">
+          <svg class="icon">
+            <use xlink:href="images/svg_sprite.svg#icons8-phone"></use>
+          </svg>
+          <p>+(251) 9332150**</p>
+        </div>
+      </article>
+    </main>
+    <footer>
+      <article>
+        <h5>Let's Connect!</h5>
+        <input
+          type="email"
+          name="email"
+          id="emailRedirect"
+          placeholder="Enter your email"
+        />
+        <button type="button" onclick="redirectToContact()">></button>
+        <p>Addis Ababa,Ethiopia</p>
+        <p>+(251) 9332150**</p>
+      </article>
+      <div>
+        <div class="social-media">
+          <a href="https://web.facebook.com/profile.php?id=61569409229890">
+            <svg class="icon">
+              <use xlink:href="images/svg_sprite.svg#facebook"></use>
+            </svg>
+            <p>Facebook</p>
+          </a>
+        </div>
+        <div class="social-media">
+          <a href="https://x.com/kid0kai">
+            <svg class="icon">
+              <use xlink:href="images/svg_sprite.svg#icons8-twitterx"></use>
+            </svg>
+            <p>X</p>
+          </a>
+        </div>
+        <div class="social-media">
+          <a href="https://www.linkedin.com/in/kidus-kai">
+            <svg class="icon">
+              <use xlink:href="images/svg_sprite.svg#linkedin"></use>
+            </svg>
+            <p>LinkedIn</p>
+          </a>
+        </div>
+        <div class="social-media">
+          <a href="https://github.com/kidxcudi">
+            <svg class="icon">
+              <use xlink:href="images/svg_sprite.svg#github"></use>
+            </svg>
+            <p>GitHub</p>
+          </a>
+        </div>
+      </div>
+      <div>
+        <p>&copy; 2024 All rights reserved.</p>
+        <p>Made by Kidus Hagos</p>
+        <p>kidxcudi2@gmail.com</p>
+      </div>
+    </footer>
+  </body>
+</html>
