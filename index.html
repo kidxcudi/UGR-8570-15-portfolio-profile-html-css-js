@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn more about Kidus H., a passionate Software Engineering student with expertise in HTML, CSS, JavaScript, Python, and Java."
+    />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="src/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" title="Home">
+        <svg class="icon home">
+          <use
+            xlink:href="src/images/svg_sprite.svg#triangle-fill-svgrepo-com"
+          ></use>
+        </svg>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html" title="Home" class="activeNav">Home</a></li>
+          <li><a href="src/about_me.html" title="About me">About me</a></li>
+          <li><a href="src/projects.html" title="Projects">Projects</a></li>
+          <li><a href="src/blog.html" title="Blog">Blog</a></li>
+          <li><a href="src/contact_me.html" title="Contact me">Contact me</a></li>
+        </ul>
+        <svg class="icon close">
+          <use xlink:href="src/images/svg_sprite.svg#icons8-close"></use>
+        </svg>
+      </nav>
+
+      <svg class="icon menu">
+        <use xlink:href="src/images/svg_sprite.svg#icons8-menu"></use>
+      </svg>
+    </header>
+    <main>
+      <section class="hero_section">
+        <h1>Hi,</h1>
+        <article class="hero_text">
+          <h2>
+            I'm Kidus H. - a <span class="soft">Software Engineer</span> <span class="stu">in the Making
+            - Student</span>
+          </h2>
+          <p>
+            As a software engineering student, I'm constantly honing my
+            skills to build clean, robust, and scalable applications. Let's
+            bring your ideas to life with well-crafted code.
+          </p>
+
+        </article>
+        <div class="hero">
+          <img src="src/images/heroImage.png" alt="A photo of me(Kidus)" />
+          <blockquote class="hideOnSmall showOnXLarge">
+            "The source of all creation is boredom. Desire is what carves the
+            path."
+          </blockquote>
+        </div>
+
+        <div class="interact">
+          <div class="btns">
+              <a class="primaryBtn" href="https://t.me/kid_47" title="let's talk" target="_blank">
+                <span>Let's Talk</span>
+                <svg class="icon">
+                  <use xlink:href="src/images/svg_sprite.svg#icons8-telegram"></use>
+                </svg>
+              </a>
+              <a
+                class="secondaryBtn"
+                href="https://www.linkedin.com/in/kidus-kai"
+                title="Hire me"
+                target="_blank"
+              >
+                Hire me!
+              </a>
+            </div>
+            
+            <div class="check hideOnSmall">
+              <span>Check out my</span>
+              <a
+                href="https://www.instagram.com/kidkai_137/profilecard/?igsh=cHFhbTc5aW5janA2"
+              >
+                <svg class="icon">
+                  <use
+                  xlink:href="src/images/svg_sprite.svg#icons8-instagram-plusar"
+                  ></use>
+                </svg>
+              </a>
+              <a href="https://www.pinterest.com/kid0kai/">
+                <svg class="icon">
+                  <use
+                    xlink:href="src/images/svg_sprite.svg#icons8-pinterest-pulsar"
+                  ></use>
+                </svg>
+              </a>
+              <a href="https://github.com/kidxcudi">
+                <svg class="icon">
+                  <use
+                    xlink:href="src/images/svg_sprite.svg#github-svgrepo-pulsar"
+                  ></use>
+                </svg>
+              </a>
+            </div>
+
+            <svg class="icon hideOnSmall showOnMid down-arrow">
+              <use xlink:href="src/images/svg_sprite.svg#down_arrow.html"></use>
+            </svg>
+        </div>
+      </section>
+      <section class="projects_section">
+        <h2>My Latest <span>Projects</span></h2>
+        <div class="projects">
+          <a
+            href="project_files/Project_6.zip"
+            download
+            title="Project 6 - Click to download"
+          >
+            <article class="project">
+              <div class="card-body project6"></div>
+              <div class="card-text">
+                <h3>Hexify</h3>
+                <p>
+                  A modern and scalable cloud hosting website built to offer
+                  seamless user experience and reliability.
+                </p>
+              </div>
+            </article>
+          </a>
+          <a
+            href="project_files/Project_5.zip"
+            download
+            title="Project 5 - Click to download"
+          >
+            <article class="project hideOnSmall showOnLarge">
+              <div class="card-body project5"></div>
+              <div class="card-text">
+                <h3>Dan's Meat Yogurt</h3>
+                <p>
+                  An eccentric e-commerce platform showcasing unique yogurt flavors
+                  with a humorous twist.
+                </p>
+              </div>
+            </article>
+          </a>
+          <a
+            href="project_files/Project_4.zip"
+            download
+            title="Project 4 - Click to download"
+          >
+            <article class="project hideOnSmall showOnXLarge">
+              <div class="card-body project4"></div>
+              <div class="card-text">
+                <h3>Not Nike</h3>
+                <p>
+                  A satirical e-commerce site featuring parody products and engaging
+                  visuals.
+                </p>
+              </div>
+            </article>
+          </a>
+        </div>
+
+        <div class="more_proj">
+          <a href="src/projects.html" title="Projects">
+            <svg class="icon arrow">
+              <use xlink:href="src/images/svg_sprite.svg#right-arrow"></use>
+            </svg>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <article class="Connect">
+        <h5 class="hideOnSmall showOnMid">Let's Connect!</h5>
+        <div class="emailbox">
+          <input
+            type="email"
+            name="email"
+            id="emailRedirect"
+            placeholder="Enter your email"
+            class="hideOnSmall showOnMid"
+          />
+          <button class="btn-thr" onclick="redirectToContact()">
+            <span>Let's Connect!</span>
+            <svg class="icon">
+              <use xlink:href="src/images/svg_sprite.svg#Arrow1"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="info">
+          <p>Addis Ababa, Ethiopia</p>
+          <p>+(251) 9332150**</p>
+        </div>
+      </article>
+      <div class="socials">
+        <div class="social-media">
+          <a
+            href="https://web.facebook.com/profile.php?id=61569409229890"
+            title="Facebook"
+            target="_blank"
+          >
+            <svg class="icon">
+              <use xlink:href="src/images/svg_sprite.svg#facebook"></use>
+            </svg>
+            <span>Facebook</span>
+          </a>
+        </div>
+        <div class="social-media">
+          <a href="https://x.com/kid0kai" title="X" target="_blank">
+            <svg class="icon">
+              <use xlink:href="src/images/svg_sprite.svg#icons8-twitterx"></use>
+            </svg>
+            <span>X</span>
+          </a>
+        </div>
+        <div class="social-media">
+          <a
+            href="https://www.linkedin.com/in/kidus-kai"
+            title="Linkedin"
+            target="_blank"
+          >
+            <svg class="icon">
+              <use xlink:href="src/images/svg_sprite.svg#linkedin"></use>
+            </svg>
+            <span>Linkedin</span>
+          </a>
+        </div>
+        <div class="social-media">
+          <a href="https://github.com/kidxcudi" title="GitHub" target="_blank">
+            <svg class="icon">
+              <use xlink:href="src/images/svg_sprite.svg#github"></use>
+            </svg>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+      <div class="base_footer">
+        <p>&copy; 2024 All rights reserved.</p>
+        <p class="hideOnSmall showOnLarge">Made by Kidus H.</p>
+        <p>kidxcudi2@gmail.com</p>
+      </div>
+    </footer>
+
+    <script src="src/js/main.js"></script>
+  </body>
+</html>

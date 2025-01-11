@@ -5,111 +5,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Learn more about Kidus H., a passionate Software Engineering student with expertise in HTML, CSS, JavaScript, Python, and Java."/>
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <header>
+      <a href="../index.html" title="Home">
+        <svg class="icon nothome">
+          <use
+            xlink:href="images/svg_sprite.svg#triangle-svgrepo-com"
+          ></use>
+        </svg>
+      </a>
       <nav>
         <ul>
-          <li>
-            <a href="index.html" title="Home">
-              <svg class="icon">
-                <use
-                  xlink:href="images/svg_sprite.svg#triangle-svgrepo-com"
-                ></use>
-              </svg>
-            </a>
-          </li>
-          <li><a href="index.html" title="Home">Home</a></li>
+          <li><a href="../index.html" title="Home">Home</a></li>
           <li><a href="about_me.html" title="About me">About me</a></li>
           <li><a href="projects.html" title="Projects">Projects</a></li>
-          <li><a href="blog.html" title="Blog">Blog</a></li>
+          <li><a href="blog.html" title="Blog" class="activeNav">Blog</a></li>
           <li><a href="contact_me.html" title="Contact me">Contact me</a></li>
         </ul>
+        <svg class="icon close">
+        <use xlink:href="images/svg_sprite.svg#icons8-close"></use>
+        </svg>
       </nav>
+      
+      <svg class="icon menu">
+        <use xlink:href="images/svg_sprite.svg#icons8-menu"></use>
+      </svg>
     </header>
     <main>
-      <h1>Blogs</h1>
-      <video controls src="videos/software_engineering_intro.mp4">
-        Your browser does not support the video tag.
-      </video>
+      <h1 class="blogsH1">Blogs</h1>
+      <div class="blogs">
+        <div class="carousel">
+          <div class="carousel-container caroOff">
+            <article class="caro-item left">
+              <video controls src="videos/software_engineering_intro.mp4">
+                Your browser does not support the video tag.
+              </video>
+              <h2 class="showOn900">The Importance of Software Engineering in Modern Development</h2>
+            </article>
+            <article class="caro-item Vcenter">
+              <h2>The Importance of Software Engineering in Modern Development</h2>
+              <p>
+                Software engineering is the backbone of modern technology. It provides
+                a structured and disciplined approach to designing, building, and
+                maintaining software. From ensuring high-quality user experiences to
+                solving complex real-world problems, software engineers play a crucial
+                role in shaping the digital landscape. Learn why best practices like
+                version control, agile development, and continuous integration are
+                essential for successful projects.
+              </p>
+            </article>
+          </div>
+          <div class="carousel-controls showOn900">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+            </div>
+        </div>
+        <div class="carousel">
+          <h2 class="low">Top 5 Trends in Software Development for 2024</h2>
+          <div class="carousel-container caroOff1 caro_c1 left">
+            <div class="caro-item item1">
+              <p>
+                The field of software engineering is evolving rapidly. Key trends for
+                2024 include the rise of artificial intelligence in coding assistance,
+                the growing adoption of serverless architectures, and the increasing
+                focus on cybersecurity. Additionally, the demand for cross-platform
+                frameworks like Flutter and the prominence of DevOps practices
+                continue to dominate the industry. Stay ahead of the curve with
+                insights into these exciting developments.
+              </p>
+            </div>
+            <table class="caro-item">
+              <thead>
+                <tr>
+                  <td><strong>Software Engineering Concepts</strong></td>
+                  <td><strong>Description</strong></td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Version Control</td>
+                  <td>Tools like Git ensure code management and collaboration.</td>
+                </tr>
+                <tr>
+                  <td>Continuous Integration</td>
+                  <td>
+                    Automates testing and deployment to streamline the development
+                    process.
+                  </td>
+                </tr>
+                <tr>
+                  <td>DevOps</td>
+                  <td>
+                    Combines development and operations for faster delivery cycles.
+                  </td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="2">Key practices for successful software projects.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
 
-      <article>
-        <h2>The Importance of Software Engineering in Modern Development</h2>
-        <p>
-          Software engineering is the backbone of modern technology. It provides
-          a structured and disciplined approach to designing, building, and
-          maintaining software. From ensuring high-quality user experiences to
-          solving complex real-world problems, software engineers play a crucial
-          role in shaping the digital landscape. Learn why best practices like
-          version control, agile development, and continuous integration are
-          essential for successful projects.
-        </p>
-      </article>
-
-      <article>
-        <h2>Top 5 Trends in Software Development for 2024</h2>
-        <p>
-          The field of software engineering is evolving rapidly. Key trends for
-          2024 include the rise of artificial intelligence in coding assistance,
-          the growing adoption of serverless architectures, and the increasing
-          focus on cybersecurity. Additionally, the demand for cross-platform
-          frameworks like Flutter and the prominence of DevOps practices
-          continue to dominate the industry. Stay ahead of the curve with
-          insights into these exciting developments.
-        </p>
-      </article>
-
-      <table>
-        <thead>
-          <tr>
-            <td><strong>Software Engineering Concepts</strong></td>
-            <td><strong>Description</strong></td>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Version Control</td>
-            <td>Tools like Git ensure code management and collaboration.</td>
-          </tr>
-          <tr>
-            <td>Continuous Integration</td>
-            <td>
-              Automates testing and deployment to streamline the development
-              process.
-            </td>
-          </tr>
-          <tr>
-            <td>DevOps</td>
-            <td>
-              Combines development and operations for faster delivery cycles.
-            </td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <td colspan="2">Key practices for successful software projects.</td>
-          </tr>
-        </tfoot>
-      </table>
+          <div class="carousel-controls hideOnBig">
+              <span class="dot1 active"></span>
+              <span class="dot1"></span>
+            </div>
+        </div>
+        </div>
+      </div>
     </main>
     <footer>
-      <article>
-        <h5>Let's Connect!</h5>
-        <input
-          type="email"
-          name="email"
-          id="emailRedirect"
-          placeholder="Enter your email"
-        />
-        <button type="button" onclick="redirectToContact()">></button>
-        <p>Addis Ababa,Ethiopia</p>
-        <p>+(251) 9332150**</p>
+      <article class="Connect">
+        <h5 class="hideOnSmall showOnMid">Let's Connect!</h5>
+        <div class="emailbox">
+          <input
+            type="email"
+            name="email"
+            id="emailRedirect"
+            placeholder="Enter your email"
+            class="hideOnSmall showOnMid"
+          />
+          <button class="btn-thr" onclick="redirectToContact()">
+            <span>Let's Connect!</span>
+            <svg class="icon">
+              <use xlink:href="images/svg_sprite.svg#Arrow1"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="info">
+          <p>Addis Ababa, Ethiopia</p>
+          <p>+(251) 9332150**</p>
+        </div>
       </article>
-      <div>
+      <div class="socials">
         <div class="social-media">
           <a
             href="https://web.facebook.com/profile.php?id=61569409229890"
-            title="Facebook" target="_blank"
+            title="Facebook"
+            target="_blank"
           >
             <svg class="icon">
               <use xlink:href="images/svg_sprite.svg#facebook"></use>
@@ -126,7 +163,11 @@
           </a>
         </div>
         <div class="social-media">
-          <a href="https://www.linkedin.com/in/kidus-kai" title="Linkedin" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/kidus-kai"
+            title="Linkedin"
+            target="_blank"
+          >
             <svg class="icon">
               <use xlink:href="images/svg_sprite.svg#linkedin"></use>
             </svg>
@@ -142,11 +183,13 @@
           </a>
         </div>
       </div>
-      <div>
+      <div class="base_footer">
         <p>&copy; 2024 All rights reserved.</p>
-        <p>Made by Kidus Hagos</p>
+        <p class="hideOnSmall showOnLarge">Made by Kidus H.</p>
         <p>kidxcudi2@gmail.com</p>
       </div>
     </footer>
+
+  <script src="js/main.js"></script>
   </body>
 </html>

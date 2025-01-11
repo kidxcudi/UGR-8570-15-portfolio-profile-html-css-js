@@ -3,131 +3,187 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Learn more about Kidus H., a passionate Software Engineering student with expertise in HTML, CSS, JavaScript, Python, and Java."/>
+    <meta
+      name="description"
+      content="Learn more about Kidus H., a passionate Software Engineering student with expertise in HTML, CSS, JavaScript, Python, and Java."
+    />
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header>
+      <a href="../index.html" title="Home">
+        <svg class="icon nothome">
+          <use xlink:href="images/svg_sprite.svg#triangle-svgrepo-com"></use>
+        </svg>
+      </a>
       <nav>
         <ul>
-          <li>
-            <a href="index.html" title="Home">
-              <svg class="icon">
-                <use
-                  xlink:href="images/svg_sprite.svg#triangle-svgrepo-com"
-                ></use>
-              </svg>
-            </a>
-          </li>
-          <li><a href="index.html" title="Home">Home</a></li>
+          <li><a href="../index.html" title="Home">Home</a></li>
           <li><a href="about_me.html" title="About me">About me</a></li>
-          <li><a href="projects.html" title="Projects">Projects</a></li>
+          <li>
+            <a href="projects.html" title="Projects" class="activeNav"
+              >Projects</a
+            >
+          </li>
           <li><a href="blog.html" title="Blog">Blog</a></li>
           <li><a href="contact_me.html" title="Contact me">Contact me</a></li>
         </ul>
+        <svg class="icon close">
+          <use xlink:href="images/svg_sprite.svg#icons8-close"></use>
+        </svg>
       </nav>
+
+      <svg class="icon menu">
+        <use xlink:href="images/svg_sprite.svg#icons8-menu"></use>
+      </svg>
     </header>
     <main>
-      <h1>My Projects</h1>
-      <section class="projects">
+      <div class="heading">
+        <h1>My Projects</h1>
         <h2>Projects I've Built and Learned From</h2>
-        <article class="project">
-          <a href="project_files/Project_6.zip" download>
-            <img
-              src="images/project_6.png"
-              alt="Screenshot of the Hexify website, a cloud hosting platform."
-            />
-            <h3>Hexify</h3>
+      </div>
+      <div class="caro_card projects-page carousel proj_caro">
+        <svg class="caro-control prev hideOnBig" aria-label="Previous">
+          <use xlink:href="images/svg_sprite.svg#arrow-left"></use>
+        </svg>
+        <div class="skill_cards carousel-container">
+          <a
+            href="project_files/Project_6.zip"
+            download
+            title="Project 6 - Click to download"
+          >
+            <article class="project">
+              <div class="card-body project6"></div>
+              <div class="card-text">
+                <h3>Hexify</h3>
+                <p>
+                  A modern and scalable cloud hosting website built to offer
+                  seamless user experience and reliability.
+                </p>
+              </div>
+            </article>
           </a>
-          <p>
-            A modern and scalable cloud hosting website built to offer seamless
-            user experience and reliability.
-          </p>
-        </article>
-        <article class="project">
-          <a href="project_files/Project_5.zip" download>
-            <img
-              src="images/project_5.png"
-              alt="Screenshot of Dan's Meat-Flavored Yogurt website, a quirky online store."
-            />
-            <h3>Dan's Meat-Flavored Yogurt</h3>
+          <a
+            href="project_files/Project_5.zip"
+            download
+            title="Project 5 - Click to download"
+          >
+            <article class="project">
+              <div class="card-body project5"></div>
+              <div class="card-text ">
+                <h3>Dan's Meat Yogurt</h3>
+                <p>
+                  An eccentric e-commerce platform showcasing unique yogurt
+                  flavors with a humorous twist.
+                </p>
+              </div>
+            </article>
           </a>
-          <p>
-            An eccentric e-commerce platform showcasing unique yogurt flavors
-            with a humorous twist.
-          </p>
-        </article>
-        <article class="project">
-          <a href="project_files/Project_4.zip" download>
-            <img
-              src="images/project_4.png"
-              alt="Screenshot of Not Nike website, a parody retail site."
-            />
-            <h3>Not Nike</h3>
+          <a
+            href="project_files/Project_4.zip"
+            download
+            title="Project 4 - Click to download"
+          >
+            <article class="project">
+              <div class="card-body project4"></div>
+              <div class="card-text ">
+                <h3>Not Nike</h3>
+                <p>
+                  A satirical e-commerce site featuring parody products and
+                  engaging visuals.
+                </p>
+              </div>
+            </article>
           </a>
-          <p>
-            A satirical e-commerce site featuring parody products and engaging
-            visuals.
-          </p>
-        </article>
-        <article class="project">
-          <a href="project_files/Project_3.zip" download>
-            <img
-              src="images/project_3.png"
-              alt="Screenshot of Parallax, a dynamic scrolling website."
-            />
-            <h3>Parallax</h3>
+          <a
+            href="project_files/Project_3.zip"
+            download
+            title="Project 3 - Click to download"
+          >
+            <article class="project">
+              <div class="card-body project3"></div>
+              <div class="card-text ">
+                <h3>Parallax</h3>
+                <p>An experimental site utilizing parallax scrolling effects.</p>
+              </div>
+            </article>
           </a>
-          <p>
-            An experimental site utilizing parallax scrolling effects.
-          </p>
-        </article>
-        <article class="project">
-          <a href="project_files/Project_2.zip" download>
-            <img
-              src="images/project_2.png"
-              alt="Screenshot of Coventic website, an innovative studio."
-            />
-            <h3>Coventic</h3>
+          <a
+            href="project_files/Project_2.zip"
+            download
+            title="Project 2 - Click to download"
+          >
+            <article class="project">
+              <div class="card-body project2"></div>
+              <div class="card-text ">
+                <h3>Coventic</h3>
+                <p>
+                  A streamlined event management tool that simplifies planning and
+                  coordination processes.
+                </p>
+              </div>
+            </article>
           </a>
-          <p>
-            A streamlined event management tool that simplifies planning and
-            coordination processes.
-          </p>
-        </article>
-        <article class="project">
-          <a href="project_files/Project_1.zip" download>
-            <img
-              src="images/project_1.png"
-              alt="Screenshot of Roar Cycle website, a fitness and cycling community portal."
-            />
-            <h3>Roar Cycle</h3>
+          <a
+            href="project_files/Project_1.zip"
+            download
+            title="Project 1 - Click to download"
+          >
+            <article class="project">
+              <div class="card-body project1"></div>
+              <div class="card-text ">
+                <h3>Roar Cycle</h3>
+                <p>
+                  A vibrant fitness community site promoting cycling and healthy
+                  living.
+                </p>
+              </div>
+            </article>
           </a>
-          <p>
-            A vibrant fitness community site promoting cycling and healthy
-            living.
-          </p>
-        </article>
-      </section>
+        </div>
+
+          <div class="carousel-controls hideOnXL showOnxMid">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+
+        <svg class="caro-control next hideOnBig" aria-label="Next">
+            <use xlink:href="images/svg_sprite.svg#arrow-right"></use>
+        </svg>
+      </div>
+      
     </main>
     <footer>
-      <article>
-        <h5>Let's Connect!</h5>
-        <input
-          type="email"
-          name="email"
-          id="emailRedirect"
-          placeholder="Enter your email"
-        />
-        <button type="button" onclick="redirectToContact()">></button>
-        <p>Addis Ababa,Ethiopia</p>
-        <p>+(251) 9332150**</p>
+      <article class="Connect">
+        <h5 class="hideOnSmall showOnMid">Let's Connect!</h5>
+        <div class="emailbox">
+          <input
+            type="email"
+            name="email"
+            id="emailRedirect"
+            placeholder="Enter your email"
+            class="hideOnSmall showOnMid"
+          />
+          <button class="btn-thr" onclick="redirectToContact()">
+            <span>Let's Connect!</span>
+            <svg class="icon">
+              <use xlink:href="images/svg_sprite.svg#Arrow1"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="info">
+          <p>Addis Ababa, Ethiopia</p>
+          <p>+(251) 9332150**</p>
+        </div>
       </article>
-      <div>
+      <div class="socials">
         <div class="social-media">
           <a
             href="https://web.facebook.com/profile.php?id=61569409229890"
-            title="Facebook" target="_blank"
+            title="Facebook"
+            target="_blank"
           >
             <svg class="icon">
               <use xlink:href="images/svg_sprite.svg#facebook"></use>
@@ -144,7 +200,11 @@
           </a>
         </div>
         <div class="social-media">
-          <a href="https://www.linkedin.com/in/kidus-kai" title="Linkedin" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/kidus-kai"
+            title="Linkedin"
+            target="_blank"
+          >
             <svg class="icon">
               <use xlink:href="images/svg_sprite.svg#linkedin"></use>
             </svg>
@@ -160,11 +220,13 @@
           </a>
         </div>
       </div>
-      <div>
+      <div class="base_footer">
         <p>&copy; 2024 All rights reserved.</p>
-        <p>Made by Kidus Hagos</p>
+        <p class="hideOnSmall showOnLarge">Made by Kidus H.</p>
         <p>kidxcudi2@gmail.com</p>
       </div>
     </footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>

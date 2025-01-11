@@ -3,35 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Learn more about Kidus H., a passionate Software Engineering student with expertise in HTML, CSS, JavaScript, Python, and Java."/>
+    <meta
+      name="description"
+      content="Learn more about Kidus H., a passionate Software Engineering student with expertise in HTML, CSS, JavaScript, Python, and Java."
+    />
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header>
+      <a href="../index.html" title="Home">
+        <svg class="icon nothome">
+          <use xlink:href="images/svg_sprite.svg#triangle-svgrepo-com"></use>
+        </svg>
+      </a>
       <nav>
         <ul>
+          <li><a href="../index.html" title="Home">Home</a></li>
           <li>
-            <a href="index.html" title="Home">
-              <svg class="icon">
-                <use
-                  xlink:href="images/svg_sprite.svg#triangle-svgrepo-com"
-                ></use>
-              </svg>
-            </a>
+            <a href="about_me.html" title="About me" class="activeNav">About me</a>
           </li>
-          <li><a href="index.html" title="Home">Home</a></li>
-          <li><a href="about_me.html" title="About me">About me</a></li>
           <li><a href="projects.html" title="Projects">Projects</a></li>
           <li><a href="blog.html" title="Blog">Blog</a></li>
           <li><a href="contact_me.html" title="Contact me">Contact me</a></li>
         </ul>
+        <svg class="icon close">
+          <use xlink:href="images/svg_sprite.svg#icons8-close"></use>
+        </svg>
       </nav>
+
+      <svg class="icon menu">
+        <use xlink:href="images/svg_sprite.svg#icons8-menu"></use>
+      </svg>
     </header>
     <main>
       <section class="me">
-        <h1>About Me</h1>
-        <article>
-          <img src="images/profile.jpg" alt="Photo of Kidus" />
+        <div class="MeImg"></div>
+        <h2>About Me</h2>
+        <article class="who">
           <h2>Hello, I'm Kidus H.</h2>
           <p>
             I'm a passionate Software Engineering student with a strong interest
@@ -41,91 +50,130 @@
             building tools that make life easier and more efficient.
           </p>
         </article>
-        <article>
-          <h3>Education</h3>
-          <ul>
-            <li>
-              <strong>Bachelor's Degree</strong> - AA University (<time datetime="2021">2021</time>  -
-              <time datetime="2024">Present</time>)
-            </li>
-            <li><strong>High School</strong> - Safari Academy (<time datetime="2017">2017</time> - <time datetime="2021">2021</time>)</li>
-            <li>
-              <strong>Middle School</strong> - Walya primary and secondary
-              school (<time datetime="2009">2009</time> - <time datetime="2017">2017</time>)
-            </li>
-          </ul>
-        </article>
+        <div class="carousel">
+          <div class="carousel-container">
+            <article class="edu caro-item">
+              <h3>Education</h3>
+              <ul>
+                <li>
+                  <strong>Bachelor's Degree</strong> - AA University (<time
+                    datetime="2021"
+                    >2021</time
+                  >
+                  - <time datetime="2024">Present</time>)
+                </li>
+                <li>
+                  <strong>High School</strong> - Safari Academy (<time
+                    datetime="2017"
+                    >2017</time
+                  >
+                  - <time datetime="2021">2021</time>)
+                </li>
+                <li>
+                  <strong>Middle School</strong> - Walya primary and secondary
+                  school (<time datetime="2009">2009</time> -
+                  <time datetime="2017">2017</time>)
+                </li>
+              </ul>
+            </article>
+            <article class="caro-item">
+              <h3>Aspirations</h3>
+              <p>
+                My goal is to become a skilled software developer who can
+                contribute to impactful projects. I am particularly interested
+                in fields such as full-stack development, artificial
+                intelligence, and cybersecurity. I aspire to work in dynamic
+                environments where I can learn from industry experts,
+                collaborate on challenging problems, and create solutions that
+                drive progress.
+              </p>
+            </article>
+          </div>
 
-        <article>
-          <h3>Aspirations</h3>
-          <p>
-            My goal is to become a skilled software developer who can contribute
-            to impactful projects. I am particularly interested in fields such
-            as full-stack development, artificial intelligence, and
-            cybersecurity. I aspire to work in dynamic environments where I can
-            learn from industry experts, collaborate on challenging problems,
-            and create solutions that drive progress.
-          </p>
-        </article>
+          <div class="carousel-controls hideOnXL">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
       </section>
       <section class="skills">
         <h2>Skills</h2>
-
-        <article class="skill_card">
-          <svg class="icon">
-            <use xlink:href="images/svg_sprite.svg#icons8-html"></use>
+        <div class="caro_card">
+          <svg class="caro-control prev hideOnBig" aria-label="Previous">
+            <use xlink:href="images/svg_sprite.svg#arrow-left"></use>
           </svg>
-          <h3>HTML</h3>
-          <span>84%</span>
-        </article>
-        <article class="skill_card">
-          <svg class="icon">
-            <use xlink:href="images/svg_sprite.svg#icons8-css"></use>
+          <div class="skill_cards">
+            <article class="skill_card">
+              <svg class="icon">
+                <use xlink:href="images/svg_sprite.svg#icons8-html"></use>
+              </svg>
+              <h3>HTML</h3>
+              <span>84%</span>
+            </article>
+            <article class="skill_card">
+              <svg class="icon">
+                <use xlink:href="images/svg_sprite.svg#icons8-css"></use>
+              </svg>
+              <h3>CSS</h3>
+              <span>78%</span>
+            </article>
+            <article class="skill_card">
+              <svg class="icon">
+                <use xlink:href="images/svg_sprite.svg#icons8-js"></use>
+              </svg>
+              <h3>JS</h3>
+              <span>43%</span>
+            </article>
+            <article class="skill_card">
+              <svg class="icon">
+                <use xlink:href="images/svg_sprite.svg#icons8-python"></use>
+              </svg>
+              <h3>Python</h3>
+              <span>74%</span>
+            </article>
+            <article class="skill_card">
+              <svg class="icon">
+                <use xlink:href="images/svg_sprite.svg#icons8-java"></use>
+              </svg>
+              <h3>Java</h3>
+              <span>67%</span>
+            </article>
+          </div>
+          <svg class="caro-control next hideOnBig" aria-label="Next">
+            <use xlink:href="images/svg_sprite.svg#arrow-right"></use>
           </svg>
-          <h3>CSS</h3>
-          <span>78%</span>
-        </article>
-        <article class="skill_card">
-          <svg class="icon">
-            <use xlink:href="images/svg_sprite.svg#icons8-js"></use>
-          </svg>
-          <h3>JS</h3>
-          <span>43%</span>
-        </article>
-        <article class="skill_card">
-          <svg class="icon">
-            <use xlink:href="images/svg_sprite.svg#icons8-python"></use>
-          </svg>
-          <h3>Python</h3>
-          <span>74%</span>
-        </article>
-        <article class="skill_card">
-          <svg class="icon">
-            <use xlink:href="images/svg_sprite.svg#icons8-java"></use>
-          </svg>
-          <h3>Java</h3>
-          <span>67%</span>
-        </article>
+        </div>
       </section>
     </main>
     <footer>
-      <article>
-        <h5>Let's Connect!</h5>
-        <input
-          type="email"
-          name="email"
-          id="emailRedirect"
-          placeholder="Enter your email"
-        />
-        <button type="button" onclick="redirectToContact()">></button>
-        <p>Addis Ababa,Ethiopia</p>
-        <p>+(251) 9332150**</p>
+      <article class="Connect">
+        <h5 class="hideOnSmall showOnMid">Let's Connect!</h5>
+        <div class="emailbox">
+          <input
+            type="email"
+            name="email"
+            id="emailRedirect"
+            placeholder="Enter your email"
+            class="hideOnSmall showOnMid"
+          />
+          <button class="btn-thr" onclick="redirectToContact()">
+            <span>Let's Connect!</span>
+            <svg class="icon">
+              <use xlink:href="images/svg_sprite.svg#Arrow1"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="info">
+          <p>Addis Ababa, Ethiopia</p>
+          <p>+(251) 9332150**</p>
+        </div>
       </article>
-      <div>
+      <div class="socials">
         <div class="social-media">
           <a
             href="https://web.facebook.com/profile.php?id=61569409229890"
-            title="Facebook" target="_blank"
+            title="Facebook"
+            target="_blank"
           >
             <svg class="icon">
               <use xlink:href="images/svg_sprite.svg#facebook"></use>
@@ -142,7 +190,11 @@
           </a>
         </div>
         <div class="social-media">
-          <a href="https://www.linkedin.com/in/kidus-kai" title="Linkedin" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/kidus-kai"
+            title="Linkedin"
+            target="_blank"
+          >
             <svg class="icon">
               <use xlink:href="images/svg_sprite.svg#linkedin"></use>
             </svg>
@@ -158,11 +210,13 @@
           </a>
         </div>
       </div>
-      <div>
+      <div class="base_footer">
         <p>&copy; 2024 All rights reserved.</p>
-        <p>Made by Kidus Hagos</p>
+        <p class="hideOnSmall showOnLarge">Made by Kidus H.</p>
         <p>kidxcudi2@gmail.com</p>
       </div>
     </footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
