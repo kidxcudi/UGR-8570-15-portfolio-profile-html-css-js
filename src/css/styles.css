@@ -242,7 +242,7 @@ nav .close {
     width: 15rem;
     height: 15rem;
     margin: auto;
-    background-image: url(../images/Polygon.png);
+    background-image: url(../images/Polygon.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -617,28 +617,28 @@ nav .close {
 }
 
 .project6 {
-    background-image: url(../images/project_6.png);
+    background-image: url(../images/project_6.webp);
 }
 
 .project5 {
-    background-image: url(../images/project_5.png);
+    background-image: url(../images/project_5.webp);
     background-size: cover;
 }
 
 .project4 {
-    background-image: url(../images/project_4.png);
+    background-image: url(../images/project_4.webp);
 }
 
 .project3 {
-    background-image: url(../images/project_3.png);
+    background-image: url(../images/project_3.webp);
 }
 
 .project2 {
-    background-image: url(../images/project_2.png);
+    background-image: url(../images/project_2.webp);
 }
 
 .project1 {
-    background-image: url(../images/project_1.png);
+    background-image: url(../images/project_1.webp);
 }
 
 .more_proj{
@@ -748,7 +748,7 @@ nav .close {
     width: 12rem;
     height: 12rem;
     border-radius: 50%;
-    background: url(../images/profile.jpg);
+    background: url(../images/profile.webp);
     background-position: top;
     background-size: cover;
 }
@@ -1828,7 +1828,7 @@ footer a svg {
     }
 
 
-    .Connect h5 {
+    .Connect h4 {
         font-size: 2rem;
         margin: 0;
         font-weight: 500;
@@ -1918,7 +1918,7 @@ footer a svg {
         margin-right: auto;
     }
 
-    .Connect h5 {
+    .Connect h4 {
         font-size: 3rem;
     }
 
