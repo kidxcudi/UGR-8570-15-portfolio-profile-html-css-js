@@ -739,7 +739,7 @@ nav .close {
     justify-self: center;
 }
 
-.me h2, .skills h2 {
+.me h1, .skills h2 {
     font-size: 2rem;
     font-weight: 400;
 }
@@ -784,7 +784,7 @@ nav .close {
         margin-left: 40%;
     }
     
-    .me > h2 {
+    .me > h1 {
         margin-left: 40%;
         justify-self: left;
     }
@@ -1499,6 +1499,14 @@ form {
 .contact_form label {
     display: block;
     margin: 0.8rem 0 0.3rem;
+}
+
+.contact_form h1 {
+    font-size: 1.6rem;
+}
+
+.contact_form h2 {
+    font-size: 1.2rem;
 }
 
 .contact_form input, .contact_form textarea {
