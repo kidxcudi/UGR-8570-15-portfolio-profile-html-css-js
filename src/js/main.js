@@ -4,7 +4,7 @@ const nav = document.querySelector('nav')
 const dots = document.querySelectorAll(".dot");
 const carouselContainer = document.querySelector(".carousel-container");
 const dots1 = document.querySelectorAll(".dot1");
-const carouselContainer1 = document.querySelector(".caro_c1");
+const carouselContainer1 = document.querySelector(".carousel-container1");
 const container = document.querySelector('.skill_cards');
 const prevButton = document.querySelector('.caro-control.prev');
 const nextButton = document.querySelector('.caro-control.next');
@@ -38,6 +38,21 @@ dots1.forEach((dot1, index) => {
   });
 });
 
+window.addEventListener("resize", () => {
+  dots.forEach(d => d.classList.remove("active"));
+  if (dots[0]) dots[0].classList.add("active");
+  carouselContainer.style.transform = `translateX(0%)`;
+
+  dots1.forEach(d => d.classList.remove("active"));
+  if (dots1[0]) dots1[0].classList.add("active");
+  carouselContainer1.style.transform = `translateX(0%)`;
+});
+
+window.addEventListener("resize", () => {
+    currentIndex = 0;
+    updateCarousel();
+});
+
 // arrow carousel
 let currentIndex = 0;
 
@@ -55,21 +70,6 @@ nextButton.addEventListener('click', () => {
   currentIndex = (currentIndex + 1) % container.children.length;
   updateCarousel();
 });
-
-
-window.addEventListener("resize", () => {
-  dots.forEach(d => d.classList.remove("active"));
-  if (dots[0]) dots[0].classList.add("active");
-  carouselContainer.style.transform = `translateX(0%)`;
-
-  dots1.forEach(d => d.classList.remove("active"));
-  if (dots1[0]) dots1[0].classList.add("active");
-  carouselContainer1.style.transform = `translateX(0%)`;
-
-  currentIndex = 0;
-  updateCarousel();
-});
-
 
 // Redirect to contact page with email query
 function redirectToContact() {

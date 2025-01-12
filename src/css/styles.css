@@ -98,7 +98,7 @@ nav ul a {
     display: block;
 }
 
-nav ul a:hover {
+nav ul a:hover, .activeNav {
     background-color: var(--color-P150);
     border-left: 5px solid var(--color-P550);
 }
@@ -482,7 +482,7 @@ nav .close {
     border: 2px solid var(--color-P450);
     border-radius: 0.8rem;
     color: var(--color-dark);
-    padding: 0 3rem;
+    padding: 0 2.5rem;
     margin: 1.3rem;
     display: inline-block;
     align-content: center;
@@ -507,6 +507,7 @@ nav .close {
 
     .secondaryBtn {
         margin: 1rem;
+        padding: 0 3rem;
     }
 
     .primaryBtn svg {
@@ -889,7 +890,7 @@ nav .close {
     margin-bottom: 1rem;
 }
 
-.carousel-container, .skill_cards {
+.carousel-container, .carousel-container1, .skill_cards {
     display: flex;
     transition: transform 0.5s ease-in-out;
     width: 100%;
@@ -1076,7 +1077,7 @@ nav .close {
         position: unset;
     }
 
-    .carousel-container {
+    .carousel-container, carousel-container1 {
         width: 100%;
     }
 
@@ -1487,12 +1488,11 @@ h1, h2, h3  {
 }
 form {
     display: grid;
-    width: 80%;
     justify-items: center;
 }
 
 .inputbox {
-    width: 80%;
+    width: 100%;
     justify-items: center;
 }
 
@@ -1510,7 +1510,7 @@ form {
 }
 
 .contact_form input, .contact_form textarea {
-    width: 22rem;
+    width: 18rem;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
     border: 1.5px solid var(--color-P350);
     border-radius: 0.3rem;
@@ -1580,6 +1580,10 @@ textarea {
 
     .inputbox {
         justify-items: unset;
+    }
+
+    .contact_form input, .contact_form textarea {
+        width: 23rem;       
     }
 
     form {
