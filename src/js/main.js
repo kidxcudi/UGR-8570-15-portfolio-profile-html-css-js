@@ -80,7 +80,7 @@ function redirectToContact() {
     return;
   }
 
-  const contactPageURL = `UGR-8570-15-portfolio-profile-html-css-js/src/contact_me.html${emailInput ? `?email=${encodeURIComponent(emailInput)}` : ''}`;
+  const contactPageURL = `/UGR-8570-15-portfolio-profile-html-css-js/src/contact_me.html${emailInput ? `?email=${encodeURIComponent(emailInput)}` : ''}`;
   window.location.href = contactPageURL;
 }
 
